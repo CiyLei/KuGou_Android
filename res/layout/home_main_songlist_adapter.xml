@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_songlist_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/songlist_not_wxh" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignLeft="@+id/img_songlist_adapter"
+        android:layout_below="@+id/img_songlist_adapter"
+        android:layout_marginRight="10dp"
+        android:background="@color/wxh_pop_line_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/img_songlist_adapter_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_alignTop="@+id/tv_songlist_adapter"
+        android:src="@drawable/pic_wxh_adpater_right" />
+
+    <TextView
+        android:id="@+id/tv_songlist_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_songlist_adapter"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/img_songlist_adapter"
+        android:text="我喜欢"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_songlist_adapter_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_songlist_adapter"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/img_songlist_adapter"
+        android:text="0首"
+        android:textColor="@color/wxh_pop_font_color"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/line_songlist_hide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/img_songlist_adapter"
+        android:visibility="gone"
+        android:background="@color/wxh" >
+
+        <RadioButton
+            android:id="@+id/radio_songlist_bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/songlist_hide_bj"
+            android:text="编辑" />
+
+        <RadioButton
+            android:id="@+id/radio_songlist_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/songlist_hide_sc"
+            android:text="删除" />
+        
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

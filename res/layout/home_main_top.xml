@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="right" >
+
+        <com.example.kugou.Controls.RoundImageView
+            android:id="@+id/pic_home_user"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_user_pic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp" >
+
+        <ImageView
+            android:id="@+id/home_to_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+            android:src="@drawable/home_top_menu" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textColor="#fff"
+        android:text="首页" />
+
+</RelativeLayout>

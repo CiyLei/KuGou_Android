@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/login_top_color" >
+
+        <ImageView
+            android:id="@+id/img_homesonglist_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic_registered_back" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的歌单"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/img_homesonglist_Menu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_top_menu_1" />
+
+        <ImageView
+            android:id="@+id/img_homesonglist_Refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_homesonglist_Menu"
+            android:src="@drawable/songlist_refresh" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_homesonglist_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/song_add_pop_xj"
+            android:text="+新建歌单" />
+
+        <TextView
+            android:id="@+id/tv_homesonglist_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_homesonglist_add"
+            android:layout_alignBottom="@+id/btn_homesonglist_add"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/wxh_pop_font_color"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:text="云空间歌曲数:0" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_seekbar_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_homesonglist_menu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wxh_pop_font_color"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:text="自建歌单(0)" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ls_songlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"   >
+    </ListView>
+    
+</LinearLayout>

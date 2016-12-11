@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_home_hide_gs"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tv_home_hide_gs_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_home_hide_gs"
+        android:layout_toRightOf="@+id/img_home_hide_gs"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:text="用户名" />
+
+    <TextView
+        android:id="@+id/tv_home_hide_gs_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_home_hide_gs_user"
+        android:layout_toRightOf="@+id/img_home_hide_gs"
+        android:textColor="@color/wxh_pop_font_color"
+        android:layout_marginTop="3dp"
+        android:text="简介" />
+
+    <TextView
+        android:id="@+id/tv_home_hide_gs_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_home_hide_gs_user"
+        android:textColor="@color/wxh_pop_font_color"
+        android:layout_marginRight="5dp"
+        android:text="2016-12-09" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/img_home_hide_gs"
+        android:layout_below="@+id/img_home_hide_gs"
+        android:background="@color/wxh_pop_line_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

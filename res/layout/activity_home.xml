@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_menu_bg" >
+
+    <com.example.kugou.Controls.mHorizontalScrollView
+        android:id="@+id/mHorizontalsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <FrameLayout 
+                    android:id="@+id/home_fragm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+					android:background="@drawable/home_bg" />
+        			
+                    
+                
+                <RelativeLayout 
+                    android:id="@+id/home_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/home_bottom"
+                    android:layout_alignParentBottom="true">
+                    
+                    <include layout="@layout/activity_home_bottom"/>
+                    
+                </RelativeLayout>
+                
+            </RelativeLayout>
+            
+            <include layout="@layout/activity_home_menu"/>
+            
+        </LinearLayout>
+        
+    </com.example.kugou.Controls.mHorizontalScrollView>
+
+</RelativeLayout>

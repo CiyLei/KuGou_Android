@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/login_top_color"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="性别"
+        android:textSize="12sp"
+        android:textColor="@color/login_top_color"
+        />
+
+    <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="0.1dp"
+        	android:background="@color/wxh_pop_line_bg"
+        	android:orientation="vertical" >
+    </LinearLayout>
+    	
+    <RelativeLayout
+        android:id="@+id/rela_sex_man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:orientation="vertical" >
+        
+        <TextView 
+        	android:id="@+id/tv_sex_man"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="10dp"
+        	android:text="男"
+        	android:textSize="12sp"
+        />
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="0.1dp"
+        	android:background="@color/wxh_pop_line_bg"
+        	android:layout_below="@+id/tv_sex_man"
+        	android:orientation="vertical" >
+    	</LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_sex_man"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_yes" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_sex_woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/tv_sex_woman"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="10dp"
+        	android:text="女"
+        	android:textSize="12sp"
+        />
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="0.1dp"
+        	android:background="@color/wxh_pop_line_bg"
+        	android:layout_below="@+id/tv_sex_woman"
+        	android:orientation="vertical" >
+    	</LinearLayout>
+        
+        <ImageView
+            android:id="@+id/img_sex_woman"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_yes" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/sex_btn_bg"
+        android:textColor="@color/wxh_pop_font_color"
+        android:text="取消" />
+    
+</LinearLayout>

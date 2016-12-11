@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_songlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blur_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_songlist_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_songlist_index"
+            android:textSize="14sp"
+            android:text="歌曲" />
+
+        <TextView
+            android:id="@+id/tv_songlist_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_songlist_song"
+            android:layout_below="@+id/tv_songlist_song"
+            android:textSize="12sp"
+            android:textColor="@color/wxh_pop_font_color"
+            android:text="歌手" />
+
+        <TextView
+            android:id="@+id/tv_songlist_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="01"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_songlist_ls_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pic_songlist_popwindow_delete" />
+
+        <com.example.kugou.Controls.RoundImageView
+            android:id="@+id/img_songlist_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="3dp" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/wxh_pop_line_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

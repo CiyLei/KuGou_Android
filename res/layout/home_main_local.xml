@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/login_top_color" >
+
+        <ImageView
+            android:id="@+id/img_local_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic_registered_back" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="本地音乐"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/img_local_Menu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_top_menu_1" />
+
+    </RelativeLayout>
+	<RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:text="我喜欢"
+        	android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@drawable/login_information_tab_txt"
+            android:background="@drawable/login_information_tab" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="猜你喜欢"
+        	android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@drawable/login_information_tab_txt"
+            android:background="@drawable/login_information_tab" />
+    </RadioGroup>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/wxh_pop_line_bg" >
+
+    </RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_local_pop_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/pic_wxh_popwindow_sxbf"
+            android:text="顺序播放"
+            android:textColor="@color/wxh_pop_font_color"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/img_local_pop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_alignTop="@+id/radio_local_pop_show"
+            android:layout_toRightOf="@+id/radio_local_pop_show"
+            android:src="@drawable/pic_wxh_popwindow_img" />
+        
+    </RelativeLayout>
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    	<ListView
+        	android:id="@+id/ls_local"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:divider="#00000000"  
+        	android:layout_above="@+id/linearlayout1" >
+    	</ListView>
+    	
+    	<LinearLayout
+    	    android:id="@+id/linearlayout1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="55dp"
+    	    android:orientation="vertical"
+    	    android:layout_alignParentBottom="true">
+    	    
+    	</LinearLayout>
+    
+    </RelativeLayout>
+
+</LinearLayout>

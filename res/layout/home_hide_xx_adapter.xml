@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0fff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_home_hide_xx"
+            android:layout_width="60dp"
+            android:layout_height="60dp" 
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_home_hide_xx"
+            android:layout_below="@+id/img_home_hide_xx"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_home_hide_xx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_home_hide_xx"
+            android:layout_toRightOf="@+id/img_home_hide_xx"
+            android:text="消息"
+            android:textColor="#f00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_home_hide_xx_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_home_hide_xx_title"
+            android:layout_below="@+id/tv_home_hide_xx_title"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="内容"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_home_hide_xx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_home_hide_xx_info"
+            android:layout_below="@+id/tv_home_hide_xx_info"
+            android:text="时间"
+            android:textColor="@color/wxh_pop_font_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
