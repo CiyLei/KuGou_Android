@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/login_top_color" >
+
+        <ImageView
+            android:id="@+id/revise_userpass_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/login_close" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_RevisePass_old"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_user_bg"
+        android:layout_below="@+id/relativeLayout1"
+        android:ems="10"
+        android:hint="请输入原密码"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:paddingLeft="40dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_RevisePass_new"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_RevisePass_old"
+        android:background="@drawable/login_user_bg"
+        android:ems="10"
+        android:hint="请输入新密码"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:paddingLeft="40dp" />
+
+    <CheckBox
+        android:id="@+id/check_ShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_RevisePass_new"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/login_top_color"
+        android:button="@drawable/check_showpass"
+        android:checked="true"
+        android:text="显示密码" />
+
+    <Button
+        android:id="@+id/btn_RevisePass"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/check_ShowPass"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_login_btn_bg"
+        android:text="确定"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_RevisePass_old"
+        android:layout_alignTop="@+id/edit_RevisePass_old"
+        android:layout_margin="10dp"
+        android:src="@drawable/login_pass_pic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_RevisePass_new"
+        android:layout_alignTop="@+id/edit_RevisePass_new"
+        android:layout_margin="10dp"
+        android:src="@drawable/login_pass_pic" />
+
+</RelativeLayout>

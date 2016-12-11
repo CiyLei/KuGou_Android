@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:id="@+id/rela_wxh_adapter">
+    
+    <ImageView
+        android:id="@+id/img_wxh_adpater_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/pic_wxh_adpater_left" />
+
+    <TextView
+        android:id="@+id/tv_wxh_adpater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_wxh_adpater_left"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img_wxh_adpater_left"
+        android:text="TextView"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_wxh_adpater_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_wxh_adpater_left"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/pic_wxh_adpater_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignLeft="@+id/img_wxh_adpater_left"
+        android:layout_below="@+id/img_wxh_adpater_left"
+        android:background="@color/wxh_pop_line_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wxh_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_wxh_adpater_left"
+        android:background="@color/wxh_adapter_hide" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_wxh_hide_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:checked="true"
+                android:button="@null"
+                android:drawableTop="@drawable/wxh_adapter_hide_xz"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="下载" />
+
+            <RadioButton
+                android:id="@+id/radio_wxh_hide_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/wxh_adapter_hide_tj"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="添加" />
+
+            <RadioButton
+                android:id="@+id/radio_wxh_hide_songinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/wxh_adapter_hide_gqxx"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="歌曲信息" />
+            
+            <RadioButton
+                android:id="@+id/radio_wxh_hide_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/wxh_adapter_hide_sc"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="删除" />
+        </RadioGroup>
+
+    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

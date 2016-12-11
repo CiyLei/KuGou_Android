@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:id="@+id/test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_top"
+        android:orientation="vertical">
+        
+    	<include  layout="@layout/home_main_top"/>
+    
+    </LinearLayout>
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    
+    	<LinearLayout 
+        	android:id="@+id/home_tab_fragm"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical">
+        	
+    	    
+    	    
+    	</LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>

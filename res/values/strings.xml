@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mKugou</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string-array name="wxh_strarr">
+	    <item >顺序播放</item>
+	    <item >随机播放</item>
+	    <item >单曲循环</item>
+	</string-array>
+    
+</resources>

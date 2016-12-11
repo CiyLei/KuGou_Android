@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/login_top_color" >
+
+        <ImageView
+            android:id="@+id/img_info_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic_registered_back" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_information_ting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:textColor="@drawable/login_information_tab_txt"
+            android:background="@drawable/login_information_tab"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="我的听" />
+
+        <RadioButton
+            android:id="@+id/radio_information_kan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/login_information_tab_txt"
+            android:background="@drawable/login_information_tab"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="我的看" />
+
+        <RadioButton
+            android:id="@+id/radio_information_chan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/login_information_tab_txt"
+            android:background="@drawable/login_information_tab"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="我的唱" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:text="我我我" />
+
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_login_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="#00000000"  
+        android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

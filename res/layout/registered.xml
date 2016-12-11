@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/back_title"/>
+
+    <EditText
+        android:id="@+id/edit_registered_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_user_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:hint="请输入用户名"
+        android:textColor="@color/registered_font_color"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+    <EditText
+        android:id="@+id/edit_registered_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_user_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="请输入密码"
+        android:textColor="@color/registered_font_color"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_registered_xsmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_registered_pass"
+        android:layout_alignBottom="@+id/edit_registered_pass"
+        android:layout_alignRight="@+id/edit_registered_pass"
+        android:background="@color/Transparent"
+        android:layout_marginRight="10dp"
+        android:text="显示密码"
+        android:textColor="@color/login_top_color" />
+    
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/registered_sex_man_bg"
+            android:textColor="@color/registered_font_color"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/radio_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/registered_sex_women_bg"
+            android:textColor="@color/registered_font_color"
+            android:layout_marginLeft="20dp"
+            android:text="女" />
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_registered"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/login_login_btn_bg"
+        android:text="注册" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/registered_font_color"
+        android:text="点击注册表示你已阅读并同意《用户协议》" />
+
+</LinearLayout>
